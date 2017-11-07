@@ -20,7 +20,7 @@ import { GapiLoader } from './gapi-loader.service';
 @Injectable()
 export class Authorization {
   private _googleAuth: gapi.auth2.GoogleAuth;
-  private _scope = 'profile email https://www.googleapis.com/auth/youtube';
+  private _scope = 'profile email https://www.googleapis.com/auth/youtube.readonly';
   private _accessToken: string;
   private autoSignInTimer: Subscription;
 

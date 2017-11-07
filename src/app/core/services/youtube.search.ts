@@ -20,6 +20,8 @@ export class YoutubeSearch {
   private _api = DataApiProviders.SEARCH;
   private _apiOptions = {
     part: 'snippet,id',
+    //forMine: 'true',
+    order: 'date',
     q: '',
     type: 'video',
     pageToken: ''
